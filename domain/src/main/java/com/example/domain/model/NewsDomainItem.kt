@@ -7,5 +7,6 @@ data class NewsDomainItem(
     val pubDate: String,
     val guid: String,
     val imageUrl: String?,
-    val dcCreator: String?
+    val dcCreator: String?,
+    val tags: List<String> = emptyList(),
 )

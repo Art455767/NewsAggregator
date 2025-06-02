@@ -38,4 +38,8 @@ data class ItemDto(
 
     @XmlElement(true)
     val dcDate: String,
-)
+) {
+
+    @XmlElement(true)
+    val tags: List<Unit> = categories.map { it.name }
+}

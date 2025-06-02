@@ -11,6 +11,6 @@ fun ItemDto.toDomain(): NewsDomainItem {
         pubDate = this.pubDate,
         guid = this.guid,
         imageUrl = this.contents.firstOrNull()?.url,
-        dcCreator = this.dcCreator
+        dcCreator = this.dcCreator,
     )
 }
