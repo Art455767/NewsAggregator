@@ -6,5 +6,6 @@ data class NewsDomainItem(
     val link: String,
     val pubDate: String,
     val guid: String,
-    val imageUrl: String?
+    val imageUrl: String?,
+    val dcCreator: String?
 )

@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
-    id("kotlin-kapt")
     id("androidx.room")
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
@@ -61,6 +60,8 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(project(":domain"))
     implementation(project(":data"))
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.media3.common.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -100,4 +101,11 @@ dependencies {
 
     // recycler
     implementation(libs.androidx.recyclerview)
+
+    // Jetpack Compose
+    implementation(libs.ui)
+    implementation(libs.material3)
+    implementation(libs.ui.tooling.preview)
+    implementation(libs.androidx.activity.compose.v160)
+
 }

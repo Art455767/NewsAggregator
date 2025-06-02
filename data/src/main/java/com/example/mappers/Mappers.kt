@@ -10,6 +10,7 @@ fun ItemDto.toDomain(): NewsDomainItem {
         link = this.link,
         pubDate = this.pubDate,
         guid = this.guid,
-        imageUrl = this.contents.firstOrNull()?.url
+        imageUrl = this.contents.firstOrNull()?.url,
+        dcCreator = this.dcCreator
     )
 }
